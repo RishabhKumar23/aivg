@@ -22,20 +22,6 @@ export default {
         '3xl': '10px 10px 0 0 #000'
       },
       colors: {
-        primary: {
-          '50': '#FFFEF0',
-          '100': '#FFFAC2',
-          '200': '#FFF299',
-          '300': '#FFE766',
-          '400': '#FFDB33',
-          '500': '#FFCC00',
-          '600': '#FFB700',
-          '700': '#FF9F00',
-          '800': '#E68A00',
-          '900': '#B36B00',
-          DEFAULT: 'hsl(var(--primary))',
-          foreground: 'hsl(var(--primary-foreground))'
-        },
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -44,7 +30,11 @@ export default {
         },
         popover: {
           DEFAULT: 'hsl(var(--popover))',
-          foreground: 'hsl(var(--popover-foreground))'
+          foreground: '#000'
+        },
+        primary: {
+          DEFAULT: '#ffd726',
+          foreground: 'hsl(var(--primary-foreground))'
         },
         secondary: {
           DEFAULT: 'hsl(var(--secondary))',
