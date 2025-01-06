@@ -1,6 +1,7 @@
 import { Button } from '@/components/ui/button'
 import { UserButton } from '@clerk/nextjs'
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Header = () => {
@@ -12,7 +13,9 @@ const Header = () => {
                 <h2 className='font-bold text-xl'>Ai Video Generator</h2>
             </div>
             <div className='flex gap-3 items-center'>
-                <Button variant='default'>Dashboard</Button>
+                <Link href={'/dashboard'}>
+                    <Button variant='default'>Dashboard</Button>
+                </Link>
                 <UserButton />
             </div>
         </div>
